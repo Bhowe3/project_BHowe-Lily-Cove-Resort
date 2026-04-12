@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lily Cove - Estimation of Costs</title>
+<link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+<h1>Lily Cove Resort</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../index.html">Flower Meadow Home</a></li>
+		<li><a href="../rooms/golden_flower_room.html">Golden Flower Room</a></li>
+		<li><a href="../rooms/crimson_flower_room.html">Crimson Flower Room</a></li>
+		<li><a href="../events/weekend.html">Petaled Events</a></li>
+		<li><a href="../contact.html">Blossomed Contact</a></li>
+		<li><a href="../estimate/estimate.html">Blooming Estimation</a></li>
+		<li><a href="../review/review.html">Pollen Reviews</a></li>
+	</ul>
+</nav>
+
+<main>
+
+<h2>Estimate Your Stay Cost</h2>
+
+<form>
+
+<h3>Select Room</h3>
+
+<select id="room">
+<option value="0">Choose a Room</option>
+<option value="139.99">Golden Flower Room - $139.99</option>
+<option value="189.99">Crimson Flower Room - $169.99</option>
+</select>
+
+<h3>Select Weekend Events</h3>
+
+<label>
+<input type="checkbox" id="tea">
+Garden Tour & Tea Party ($25)
+</label><br>
+
+<label>
+<input type="checkbox" id="music">
+Sunset Live Music ($20)
+</label><br>
+
+<label>
+<input type="checkbox" id="bonfire">
+Nighttime Bonfire Gathering ($15)
+</label><br><br>
+
+<button type="button" onclick="calculatePrice()">Calculate Total</button>
+
+</form>
+
+<h3>Cost Breakdown</h3>
+<p>Subtotal: <span id="subtotal">$0.00</span></p>
+<p>Tax: <span id="tax">$0.00</span></p>
+<p>Total: <span id="total">$0.00</span></p>
+
+</main>
+
+<footer>
+Copyright &copy; 2025<br>
+<a href="bdhowe@amarillocollege.com">Brennan Howe</a>
+</footer>
+
+<script src="../scripts/estimate.js"></script>
+
+</div>
+</body>
+</html>
