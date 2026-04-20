@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lily Cove - Photo Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="../styles/styles.css">
+<link rel="stylesheet" href="../styles/gallery.css">
+
+<script src="../scripts/gallery.js" defer></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+  <h1>Lily Cove Resort</h1>
+</header>
+
+<nav>
+  <ul> 
+    <li><a href="../index.html">Flower Meadow Home</a></li>
+    <li><a href="../rooms/golden_flower_room.html">Golden Flower Room</a></li>
+    <li><a href="../rooms/crimson_flower_room.html">Crimson Flower Room</a></li>
+    <li><a href="../events/weekend.html">Petaled Events</a></li>
+    <li><a href="../contact.html">Blossomed Contact</a></li>
+    <li><a href="../estimate/estimate.html">Blooming Estimation</a></li>
+    <li><a href="../review/review.html">Pollen Reviews</a></li>
+    <li><a href="../gallery/gallery.html">Sunny Gallery</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<h2>Photo Gallery</h2>
+<p>Click an image to view it larger.</p>
+
+<div class="gallery-wrapper">
+  <button id="prevBtn">&#10094;</button>
+
+  <div id="gallery"></div>
+
+  <button id="nextBtn">&#10095;</button>
+</div>
+
+<div id="viewer" onclick="closeViewer()">
+  <span id="closeBtn">&times;</span>
+  <img id="viewerImg">
+  <p id="caption"></p>
+</div>
+
+</main>
+
+<footer>
+Copyright &copy; 2025<br>
+<a href="mailto:bdhowe@amarillocollege.com">Brennan Howe</a>
+</footer>
+
+</div>
+</body>
+</html>

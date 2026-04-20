@@ -177,9 +177,8 @@ footer a:hover {
       color: darkblue;
   }
   
-  label {
+label {
       display: block;
       margin: 10px 0;
   }
-
 }
