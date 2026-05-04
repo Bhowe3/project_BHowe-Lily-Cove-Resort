@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Checkout | Lily Cove</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/styles.css">
+
+<script src="../scripts/checkout.js" defer></script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<header>
+    <h1>Lily Cove Resort</h1>
+</header>
+
+<nav>
+<ul>
+    <li><a href="../index.html">Flower Meadow Home</a></li>
+    <li><a href="../shopping/shop.html">Gift Shop</a></li>
+    <li><a href="../shopping/cart.html">Cart</a></li>
+</ul>
+</nav>
+
+<main>
+<h2>Checkout</h2>
+
+<div id="summary"></div>
+
+<form onsubmit="return validateForm()">
+    Name: <input id="name"><br><br>
+    Email: <input id="email"><br><br>
+    Address: <input id="address"><br><br>
+
+    <button type="submit">Place Order</button>
+</form>
+
+<p id="error" style="color:red;"></p>
+</main>
+
+<footer>
+<p>&copy; Lily Cove Resort</p>
+</footer>
+
+</div>
+</body>
+</html>

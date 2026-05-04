@@ -1,21 +1,27 @@
 /*Make HTML5 layout elements behave as block-level elements*/
 header, nav, main, footer { display: block; }
+
 /*Global body styling*/
-body {  background-color: #2b1a47; /*Deep purple background*/
-		font-family: "Verdana", Arial, sans-serif; /*Clean readable fonts*/
-		margin: 0;
-		padding: 0;
+body {  
+    background-color: #2b1a47; /*Deep purple background*/
+    font-family: "Verdana", Arial, sans-serif; /*Clean readable fonts*/
+    margin: 0;
+    padding: 0;
 }
+
 /*Wrapper to center content and create a contained layout*/
-#wrapper {  width: 900px; /*Standard fixed width layout*/
-			margin: 0 auto; /*Centers the entire site*/
-			background-color: #f4f8f2; /*Soft off‑white background*/
-			color: #2b1a47; /*Deep purple text color*/
-			box-shadow: 5px 5px 10px #00000055; /*Soft outer shadow*/
-			border-radius: 8px; /*Rounded corners*/
+#wrapper {  
+    width: 900px; /*Standard fixed width layout*/
+    margin: 0 auto; /*Centers the entire site*/
+    background-color: #f4f8f2; /*Soft off-white background*/
+    color: #2b1a47; /*Deep purple text color*/
+    box-shadow: 5px 5px 10px #00000055; /*Soft outer shadow*/
+    border-radius: 8px; /*Rounded corners*/
 }
+
 /*Main title area*/
-h1 { background-image: url(../images/logo.gif); /*Logo image behind text*/
+h1 { 
+    background-image: url(../images/logo.gif); /*Logo image behind text*/
     background-repeat: no-repeat;
     background-color: #f4f8f2;
     font-family: Georgia, "Times New Roman", serif;
@@ -24,47 +30,62 @@ h1 { background-image: url(../images/logo.gif); /*Logo image behind text*/
     margin: 0;
     text-align: center;
     color: #2b1a47;
-	border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 /*Navigation bar styling*/
-nav { background-color: #bcd8bd; /* Soft green */
-	padding: 10px;
+nav { 
+    background-color: #bcd8bd; /* Soft green */
+    padding: 10px;
 }
+
 /*Remove bullet points and spacing*/
-nav ul {list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
+
 /*Display nav links horizontally*/
 nav li {  
-	display: inline-block;
-	margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
+
 /*Link appearance in nav*/
-nav a {  text-decoration: none;
-color: #2b1a47;
-font-weight: bold;
-padding: 6px 12px;
-border-radius: 4px; }
+nav a {  
+    text-decoration: none;
+    color: #2b1a47;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px; 
+}
+
 nav a:link { color: #330000; }
 nav a:visited{ color: #4d3d68; }
+
 /*Hover effect for navigation links*/
-nav a:hover { background-color: #4d3d68; /* Darker purple */
-			  color: #f4f8f2; 
-}		  
+nav a:hover { 
+    background-color: #4d3d68; /* Darker purple */
+    color: #f4f8f2; 
+}          
+
 /*Main content area styling*/
 main {
-	padding: 20px;
-	font-size: 1.05em;
-	line-height: 1.6;
+    padding: 20px;
+    font-size: 1.05em;
+    line-height: 1.6;
 }
-main img { float: right;
-           padding: 20px;
-           border-radius: 10px;
+
+/* General images (used on other pages) */
+main img { 
+    float: right;
+    padding: 20px;
+    border-radius: 10px;
 }
-/* to center some of my images so they dont look weird on the website or make other things move */
+
+/* Section layout */
 main section {
     display: flex;
     flex-direction: row-reverse; 
@@ -75,25 +96,27 @@ main section {
 }
 
 main section img {
-    /* Ensure the image doesn't shrink and has some space from the text */
     flex-shrink: 0;
     margin-left: 15px; 
 }
 
-/* Fix for the text content on the left (h3 and p) */
 main section div {
-    /* Allow the text container to take up the remaining space */
     flex-grow: 1;
 }
+
+/* Headings */
 h2 {
     color: #2b1a47;
     border-bottom: 3px solid #bcd8bd;
     padding-bottom: 8px;
 }
+
 h3 {
     color: #3e2b5c;
     font-size: 1.4em;
 }
+
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -109,15 +132,16 @@ th, td {
 th {
   background-color: #bcd8bd;
 }
+
 /*Footer section styling*/
 footer {
-	background-color: #bcd8bd; /* Soft green */
-	text-align: center;
-	padding: 20px;
-	font-size: 0.9em;
-	font-style: italic;
-	border-top: 3px solid #bcd8bd;
-	border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    background-color: #bcd8bd;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    font-style: italic;
+    border-top: 3px solid #bcd8bd;
+    border-radius: 0 0 8px 8px;
 }
 
 /*Footer link styling*/
@@ -129,6 +153,26 @@ footer a {
 /*Hover effect for footer link*/
 footer a:hover {
     color: #4d3d68;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+}
+
+/* Override float issue from main img */
+.product-img {
+    width: 180px;
+    height: auto;
+    float: none;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -168,17 +212,19 @@ footer a:hover {
   table {
     font-size: 0.9em;
   }
+
   body {
-	  font-family: Arial;
-      margin: 20px;
+    font-family: Arial;
+    margin: 20px;
   }
-  
+
   h1 {
-      color: darkblue;
+    color: darkblue;
   }
-  
-label {
-      display: block;
-      margin: 10px 0;
+
+  label {
+    display: block;
+    margin: 10px 0;
   }
+
 }
