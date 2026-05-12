@@ -21,6 +21,13 @@ function renderSummary(){
 }
 
 function validateForm(){
+    let cart = getCart();
+
+    if (!cart || cart.length === 0) {
+        document.getElementById("error").innerHTML = "Your cart is empty.";
+        return false;
+    }
+
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
     let address = document.getElementById("address").value;
